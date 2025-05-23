@@ -29,12 +29,8 @@ This script extracts the scaled and bias corrected volumes from the FSL anat out
 
 This folder contains the code used for lesion segmentation of T2 lesions and T1 lesions (black holes). Binary lesion masks were segmented using thresholding and deep learning based methods. 
 
-### T2 lesions
-
 - **inference_all_patients.py:**
 The T2 lesion masks were obtained by using a pretrained nnU-Net model and running inference on the preprocessed data. 
-
-### T1 lesions
 
 - **T1-lesions_thresholding.ipynb:**
 This notebook consists of the code which was used to extract T1 lesions from T2 lesions through a threshold-based approach. The threshold was set as the 5th percentile of the grey matter intensity, and the tissue segmentation acquired from FSL anat was therefore used. All T2 lesion voxels that had an intensity lower than the threshold were classified as T1 lesion voxels. 
