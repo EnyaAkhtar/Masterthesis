@@ -89,4 +89,4 @@ The relationship between lesion distribution and clinical symptoms was explored 
 This notebook presents the data preparation that was needed for statistical comparison between lesion metrics and the clinical test data, in addition to the correlation calculation itself. This code shows specifically the comparisons between the clinical scoring and the SPACE-MS metrics from the T2 lesions. However, the same methodology was used to investigate the association between clinical tests and both the SPACE-MS metrics from T1 lesions and NCI metrics.
 
 - **corticospinal_tract.ipynb:**
-
+This notebook was used to segment corticospinal lesions and compute correlation between these lesions and fine motor functions. Additionally, the longitudinal change of lesion volume of T2 lesions, T1 lesions and corticospinal lesions as well as the longitudinal change in clinical scoring was computed. These were used to investigate whether growth or reduction in lesion load impacts the motor symptoms.
