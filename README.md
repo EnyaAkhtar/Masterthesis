@@ -73,8 +73,8 @@ The code for computing the NCI required the individual lesion metrics and the gl
 - **create_input_csv_nci.py:**
 In order to calculate the NCI a CSV-file containing the paths to the SMA and brainstem parcellations and labelled lesion masks from SPACE-MS needed was needed. This code creates a dataframe containing these paths and saves it as a CSV-file.
 
-- **space_ms_nci:**
-This script was used to acqure the NCI metrics. The input CSV-file of paths to lesion and SMA-brainstem masks and lesion metrics files were needed to run the code.
+- **space_ms_nci.py:**
+This script was used to acquire the NCI metrics. The input CSV-file of paths to lesion and SMA-brainstem masks and lesion metrics files were needed to run the code.
 
 ## Correlation analysis
 
