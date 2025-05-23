@@ -1,5 +1,4 @@
-# Master's Thesis
-# Deep Learning in Multiple Sclerosis for MR Lesion Segmentation and Correlation to Symptoms
+# Master's Thesis: Deep Learning in Multiple Sclerosis for MR Lesion Segmentation and Correlation to Symptoms
 
 This repository contains code for segmentation and analysis of brain lesions in multiple sclerosis (MS) patients, in addition to correlation analysis between MS lesions and clinical symptoms.
 
