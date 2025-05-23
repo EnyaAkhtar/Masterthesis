@@ -3,6 +3,11 @@
 
 This repository contains code for segmentation and analysis of brain lesions in multiple sclerosis (MS) patients, in addition to correlation analysis between MS lesions and clinical symptoms.
 
+## Table of Contents
+
+- [Image processing](#Image processing)
+- [T2 lesions](#T2 lesions)
+- [T1 lesions](#T1 lesions)
 
 # Repository structure
 
