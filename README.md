@@ -6,12 +6,12 @@ This repository contains code for segmentation and analysis of brain lesions in 
 ## Table of Contents
 
 - [Image processing](#Image processing)
-- [T2 lesions](#T2 lesions)
-- [T1 lesions](#T1 lesions)
+- [Lesion segmentation](#Lesion segmentation)
+
 
 # Repository structure
 
-## Image processing
+# Image processing
 
 This folder consists of scripts describing the performed preprocessing of the MRI volumes before obtaining MS brain lesions. T1-weighted volumes with contrast and T2-FLAIR volumes were cropped, bias corrected and aligned with each other. Additionally the preprocessed volumes were structured as required by the nnU-Net algorithm. Two Python scripts are included in the folder.
 
@@ -23,7 +23,7 @@ This script was used to extract the contrast-enhanced T1-weighted volumes and th
 
 This script extracts the scaled and bias corrected volumes from the FSL anat outputs. The T2-FLAIR volumes were registered to the T1-weighted volumes using FSL's FLIRT. Subsequently, the T1 volumes and registered T2 volumes were renamed and the folders were structured to prepare for running nnU-Net inference.
 
-## Lesion segmentation
+# Lesion segmentation
 
 This folder contains the code used for lesion segmentation of T2 lesions and T1 lesions (black holes). Binary lesion masks were segmented using thresholding and deep learning based methods. 
 
