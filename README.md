@@ -68,8 +68,11 @@ FSL's applywarp was used to obtain atlases in subject space by applying the warp
 
 The scripts in this folder presents the steps taken to acquire the neural caudality index (NCI). The NCI was computed through a script expanding on the SPACE-MS algorithm.
 
-**get_nci_parcellations.py:**
+- **get_nci_parcellations.py:**
 To calculate the NCI, parcellations of the brainstem and supplementary motor area (SMA) were needed. These were extracted from the subject-specific atlases of the cortical and subcortical structures. 
 
-**edit_global_metrics_files.py:**
-The code for computing the NCI required the individual lesion metrics and the global lesion metrics obtained from SPACE-MS. However, the code expected an additional column in the global metrics file, containing subject name. Therefore
+- **edit_global_metrics_files.py:**
+The code for computing the NCI required the individual lesion metrics and the global lesion metrics obtained from SPACE-MS. However, the code expected an additional column in the global metrics file, containing subject name. Therefore, all global lesion metrics files were edited using this script.
+
+- **create_input_csv_nci.py**
+
