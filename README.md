@@ -9,6 +9,8 @@ This repository contains code for segmentation and analysis of brain lesions in 
 - [Lesion segmentation](#Lesion-segmentation)
 - [SPACE-MS](#SPACE-MS)
 - [Standard to subject space](#Standard-to-subject-space)
+- [NCI](#NCI)
+
 
 # Repository structure
 
@@ -70,3 +72,4 @@ The scripts in this folder presents the steps taken to acquire the neural caudal
 To calculate the NCI, parcellations of the brainstem and supplementary motor area (SMA) were needed. These were extracted from the subject-specific atlases of the cortical and subcortical structures. 
 
 **edit_global_metrics_files.py:**
+The code for computing the NCI required the individual lesion metrics and the global lesion metrics obtained from SPACE-MS. However, the code expected an additional column in the global metrics file, containing subject name. Therefore
