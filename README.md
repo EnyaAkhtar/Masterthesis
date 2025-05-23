@@ -7,7 +7,8 @@ This repository contains code for segmentation and analysis of brain lesions in 
 
 - [Image processing](#Image-processing)
 - [Lesion segmentation](#Lesion-segmentation)
-
+- [SPACE-MS](#SPACE-MS)
+- [Standard to subject space](#Standard-to-subject-space)
 
 # Repository structure
 
@@ -42,3 +43,23 @@ This notebook consists of the code which was used to extract T1 lesions from T2 
 **3D-U-NET_T1_segmentation.ipynb**
 
 The T1 lesion masks obtained from thresholding were used as ground truth labels in a deep learning pipeline for automated T1 lesion segmentation. Two U-Net frameworks were trained using different hyperparameter combinations. The U-Net frameworks were similar, but differed in their required input channels, where one relied solely on T1-weighted volumes as input, while the other also used T2-lesion masks. This notebook describes the data preparation, training, model selection and evaluation of these networks.
+
+## SPACE-MS
+
+The code in this folder describes the steps taken to acquire the lesion covariance metrics from the SPACE-MS method. 
+
+**Preprocessing_SPACE_MS.ipynb**
+
+During covariance computation, small lesions triggered error messages or warnings. To prevent this, all lesions smaller than 10 voxels were removed from the T2 lesion masks. This step was not applied to the T1 lesions, as they were generally smaller and more dispersed. The errors were caused by covariance computations on individual lesions. However, since only the global lesion metrics were needed, the warnings for the T1 lesions were ignored.
+
+**running_space_ms.py**
+
+This script was used to run the SPACE-MS algorithm on the T2 lesions and gain the lesion covariance metrics. The same script was used on T1 lesions, with the paths changed accordingly.
+
+## Standard to subject space
+
+This folder contains the steps that were taken to convert a standard template or atlas to subject space. The code specifically describes how the subject-specific parcellations of the brainstem and supplementary motor area (SMA) were obtained, which were needed for calculating the neural caudality index. However, the same methodoly was used to acqure corticospinal trat masks as well.
+
+**get_transformations.py**
+
+
