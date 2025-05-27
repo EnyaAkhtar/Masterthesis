@@ -10,7 +10,9 @@ This repository contains code for segmentation and analysis of brain lesions in 
 - [Standard to subject space](#Standard-to-subject-space)
 - [NCI](#NCI)
 - [Correlation analysis](#Correlation-analysis)
-
+- [Dependencies](#Dependencies)
+- [Usage](#Usage)
+- [Contact](#Contact)
 
 # Repository structure
 
@@ -115,8 +117,6 @@ The scripts in this repository compose a pipeline from MS lesion acquisition to 
 # Contact
 
 If you have any questions or concerns, you can contact me at enyanoor@outlook.com
-
-
 
 
 
