@@ -85,3 +85,38 @@ This notebook presents the data preparation that was needed for statistical comp
 
 - **corticospinal_tract.ipynb:**
 This notebook was used to segment corticospinal lesions and compute correlation between these lesions and fine motor functions. Additionally, the longitudinal change of lesion volume of T2 lesions, T1 lesions and corticospinal lesions as well as the longitudinal change in clinical scoring was computed. These were used to investigate whether growth or reduction in lesion load impacts the motor symptoms.
+
+# Dependencies
+
+The following dependencies are required to run the scripts in this repository.
+
+- Python (version 3.11.9)
+- PyTorch (version 2.0.1)
+- Nibabel (version 5.3.0)
+- Matplotlib (version 3.9.2)
+- NumPy (version 1.26.4)
+- Pandas (2.2.3)
+- MONAI (version 1.2.0)
+- SciPy (version 1.14.1)
+- Seaborn (version 0.13.2)
+- Jupyter (version 7.2.2)
+- FSL (version 6.0.7.13)
+- nnUNet (version 1.7.0 - https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1)
+- SPACE-MS (https://github.com/carmentur/SPACE-MS)
+
+nnU-Net also requires a GPU, and it is recommended a strong CPU along with it. 
+
+The source code for calculating NCI is not yet publicly available. Carmen Tur can be contacted for access at ctur@cem-cat.org.
+
+# Usage
+
+The scripts in this repository compose a pipeline from MS lesion acquisition to analysis. By installing the required dependencies and cloning this repository the code can be executed. Paths and directory names need to be altered in the scripts accordingly.
+
+# Contact
+
+If you have any questions or concerns, you can contact me at enyanoor@outlook.com
+
+
+
+
+
