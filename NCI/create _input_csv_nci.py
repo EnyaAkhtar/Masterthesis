@@ -16,7 +16,7 @@ def create_input_csv():
 
     """
 
-    # Path to supplementary motor area (SMA) and brainstem masks 
+    # Path to SMA and brainstem masks 
     parcellations_path = "/SPACE-MS/MS_SMART/create_parcellations/sma_brainstem_parcellations/"
 
     # Path to SPACE-MS output files
@@ -31,10 +31,10 @@ def create_input_csv():
     for subject in basal_masks_subjects:
         if not subject.startswith('.'):
             
-            # Path to subject specific labelled lesion masks
+            # Path to subject-specific labelled lesion masks
             lab_les_path = os.path.join(basal_masks_path, subject, f"{subject}_lesion_labels.nii")
             
-            # Path to subject specific SMA and brainstem masks
+            # Path to subject-specific SMA and brainstem masks
             parc_path = os.path.join(parcellations_path, f"01-{subject}_parcellation.nii")
 
             # Dataframe of paths to the labelled lesion masks and parcellation masks

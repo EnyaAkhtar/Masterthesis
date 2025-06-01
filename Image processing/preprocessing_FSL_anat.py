@@ -31,7 +31,7 @@ def run_fsl_anat(first, last):
 
         for file in files:
 
-            # Find the correct T2-FLAIR and T1 weighted volumes
+            # Find the correct T2-FLAIR and T1-weighted volumes
             if '_t2_spc_da-fl_sag_HF_p3_' in file and file.endswith('spcir_278ns.nii.gz') and  '_ND_' not in file and 'registered' not in file:
                 t2_path = os.path.join(root, file)
 

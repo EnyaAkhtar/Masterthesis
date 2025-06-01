@@ -6,7 +6,7 @@ import numpy as np
 def get_parcellation():
 
     """
-    Get masks consisting of supplementary motor area (SMA) and brainstem from the subject specific cortical and subcortical atlases. 
+    Get masks consisting of the supplementary motor area (SMA) and the brainstem from the subject-specific cortical and subcortical atlases. 
 
     Returns:
         None: SMA and brainstem parcellation masks are generated and saved in a specified directory.

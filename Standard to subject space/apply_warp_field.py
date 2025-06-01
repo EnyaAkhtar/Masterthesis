@@ -6,7 +6,6 @@ def apply_warp(first, last):
     """
     Applies non-linear warp fields (from FNIRT) to standard cortical and subcortical atlases, transforming them into subject space.
 
-
     Args:
         first (int): Index of the first patient folder to process.
         last (int): Index of the last patient folder to process.
@@ -53,7 +52,7 @@ def apply_warp(first, last):
                         f"--out={output_cortical}",
                         "--interp=nn"])
 
-        # Apply warp field to subcortical atlas
+        # Apply warp field on the subcortical atlas
         print(f"Running applywarp for {subject} - SUBCORTICAL ATLAS")
         subprocess.run(["applywarp",
                         f"--in={path_subcortical_atlas}",

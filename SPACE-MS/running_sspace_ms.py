@@ -14,7 +14,7 @@ def running_space_ms(first, last):
         None: The function saves the SPACE-MS output to the specified output directory.
     """
 
-    # Path lesion masks where smallest lesions were removed
+    # Path to lesion masks where smallest lesions were removed
     path_filtered_masks = "/masks_small_lesions_removed/" 
 
     # Path to save SPACE-MS outputs

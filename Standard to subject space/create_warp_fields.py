@@ -5,7 +5,7 @@ def get_warp_field(first, last):
 
     """
     Get warp fields through non-linear registration using FNIRT on a subset of MR volumes. 
-    Initial transfrmations are used by utilizing output from FLIRT.
+    Initial transformations are used by utilizing output from FLIRT.
  
     Args:
         first (int): Index of the first patient folder to process.
@@ -22,7 +22,7 @@ def get_warp_field(first, last):
     # Path to MRI volumes
     path_subjects = "/input_inference/"
 
-    # Path to the initial transformation matrices from running FLIRT
+    # Path to the initial transformation matrices from FLIRT
     transformation_path = "/transformation_matrices/"
 
     # Output path to save warp fields
