@@ -53,7 +53,7 @@ This script was used to run the SPACE-MS algorithm on the T2 lesions and gain th
 
 ## Standard to subject space
 
-This folder contains the steps that were taken to convert a standard template or atlas to subject space. This was needed for calculation of the neural caudality index and corticospinal lesions.
+This folder contains the steps that were taken to convert a standard template or atlas to subject space. This was needed for calculation of the neuraxis caudality index and corticospinal lesions.
 
 - **get_transformations.py:**
 Initial transformation matrices were obtained for all patients by registering a standard brain template to the patient's T1-weighted MRI volumes using FSL's FLIRT. 
@@ -66,7 +66,7 @@ FSL's applywarp was used to convert standard atlases to subject space by applyin
 
 ## NCI
 
-The scripts in this folder present the steps taken to acquire the neural caudality index (NCI). The NCI was computed through a script expanding on the SPACE-MS algorithm.
+The scripts in this folder present the steps taken to acquire the neuraxis caudality index (NCI). The NCI was computed through a script expanding on the SPACE-MS algorithm.
 
 - **get_nci_parcellations.py:**
 To calculate the NCI, parcellations of the brainstem and supplementary motor area (SMA) were needed. These were extracted from the subject-specific atlases of the cortical and subcortical structures. 
