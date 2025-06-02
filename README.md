@@ -99,7 +99,7 @@ The following dependencies are required to run the scripts in this repository.
 - Nibabel (version 5.3.0)
 - Matplotlib (version 3.9.2)
 - NumPy (version 1.26.4)
-- Pandas (2.2.3)
+- Pandas (version 2.2.3)
 - MONAI (version 1.2.0)
 - SciPy (version 1.14.1)
 - Seaborn (version 0.13.2)
