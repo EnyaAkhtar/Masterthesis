@@ -8,7 +8,7 @@ def create_input_csv():
 
     """
     Creates a CSV file of paths to the labelled lesion masks and parcellation masks containing 
-    supplementary motor area (SMA) and brainstem parcellations. This file is required during neural
+    supplementary motor area (SMA) and brainstem parcellations. This file is required during neuraxis
     caudality index (NCI) computation.
 
     Returns:
