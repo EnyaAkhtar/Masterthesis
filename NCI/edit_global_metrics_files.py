@@ -3,7 +3,7 @@ import pandas as pd
 
 """
 This script edits an existing global lesion metrics file by inserting a column in the beginning containing participant ID.
-This is required during neural caudality index (NCI) calculation.
+This is required during neuraxis caudality index (NCI) calculation.
 """
 
 # Path to SPACE-MS output files
