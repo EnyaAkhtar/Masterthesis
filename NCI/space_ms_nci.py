@@ -4,7 +4,7 @@ import subprocess
 def run_space_ms_caudality(first, last):
 
     """
-    Computes the neural caudality index (NCI) using the supplementary motor area (SMA) and brainstem parcellations 
+    Computes the neuraxis caudality index (NCI) using the supplementary motor area (SMA) and brainstem parcellations 
     in addition to the SPACE-MS outputs. The lesion metrics and global lesion metrics from SPACE-MS are required to run the script,
     in addition to a CSV file containing paths of labelled lesion masks and labelled parcellations. The labels of the SMA and brainstem
     need to be specified when running the script. 
